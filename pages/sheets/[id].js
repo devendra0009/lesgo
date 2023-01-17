@@ -1,15 +1,15 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Question from "../../components/Question";
 import Sidebar from "../../components/Sidebar";
 import Bar from "../../components/Bar";
 import { TbLoader } from "react-icons/tb";
+import SheetList from "../../data/SheetList";
 
 export async function getStaticPaths() {
-  const response = await axios.get(`${process.env.BASE_URL}/api/sheetlist`);
-  const sheets = response.data;
+  // const response = await axios.get(`${process.env.BASE_URL}/api/sheetlist`);
+  const sheets = SheetList;
 
   const paths = sheets.map((sheet) => ({
     params: {
@@ -24,10 +24,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const response = await axios.get(
-    `${process.env.BASE_URL}/api/sheets/${params.id}`
-  );
-  const sheet = response.data;
+  // const response = await axios.get(
+  //   `${process.env.BASE_URL}/api/sheets/${params.id}`
+  // );
+  const sheet = SheetList[Number(params.id) - 1];
 
   return {
     props: {
