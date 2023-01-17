@@ -6,8 +6,8 @@ const SheetBox = ({ sheet }) => {
   return (
     <>
       <Container>
-        <div class="box">
-          <div class="content">
+        <div className="box">
+          <div className="content">
             <div className="author">{sheet.name}</div>
             <img src={sheet.img} alt="dsa" />
             <p>Number Of Problems : {sheet.length}</p>

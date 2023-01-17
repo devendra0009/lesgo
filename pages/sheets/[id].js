@@ -8,7 +8,7 @@ import Bar from "../../components/Bar";
 import { TbLoader } from "react-icons/Tb";
 
 export async function getStaticPaths() {
-  const response = await axios.get(`http://localhost:3000/api/sheetlist`);
+  const response = await axios.get(`${process.env.BASE_URL}/api/sheetlist`);
   const sheets = response.data;
 
   const paths = sheets.map((sheet) => ({
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const response = await axios.get(
-    `http://localhost:3000/api/sheets/${params.id}`
+    `${process.env.BASE_URL}/api/sheets/${params.id}`
   );
   const sheet = response.data;
 

@@ -145,7 +145,7 @@ const AmanDsaQuestions = [
     problem:
       "Find Minimum Number of Merge Operations to Make an Array Palindrome",
     link: "htps:/www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 22,
@@ -153,7 +153,7 @@ const AmanDsaQuestions = [
     problem:
       "Given an Array of Numbers Arrange the Numbers to Form the Biggest Number",
     link: "htps:/www.geeksforgeeks.org/given-an-array-of-numbers-arrange-the-numbers-to-form-the-biggest-number/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 23,
@@ -175,7 +175,7 @@ const AmanDsaQuestions = [
     problem:
       "Print all Possible Combinations of r Elements in a Given Array of Size n",
     link: "htps:/www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 26,
@@ -225,7 +225,7 @@ const AmanDsaQuestions = [
     problem:
       "Convert a Sentence into its Equivalent Mobile Numeric Keypad Sequence",
     link: "htps:/www.geeksforgeeks.org/convert-sentence-equivalent-mobile-numeric-keypad-sequence/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 33,
@@ -289,7 +289,7 @@ const AmanDsaQuestions = [
     problem:
       "Smallest Window in a String Containing all the Characters of Another String",
     link: "htps:/practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
-    solved: "false",
+    solved: false,
   },
   {
     id: 42,
@@ -318,7 +318,7 @@ const AmanDsaQuestions = [
     problem:
       "Transform One String to Another using Minimum Number of Given Operation",
     link: "htps:/www.geeksforgeeks.org/transform-one-string-to-another-using-minimum-number-of-given-operation/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 46,
@@ -389,7 +389,7 @@ const AmanDsaQuestions = [
     problem:
       "Given a Matrix of ‘O’ and ‘X’, Replace ‘O’ with ‘X’ if Surrounded by ‘X’",
     link: "htps:/www.geeksforgeeks.org/given-matrix-o-x-replace-o-x-surrounded-x/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 56,
@@ -397,7 +397,7 @@ const AmanDsaQuestions = [
     problem:
       "Find a Common Element in all Rows of a Given Row-Wise Sorted Matrix",
     link: "htps:/www.geeksforgeeks.org/find-common-element-rows-row-wise-sorted-matrix/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 57,
@@ -419,7 +419,7 @@ const AmanDsaQuestions = [
     problem:
       "Permute Two Arrays such that Sum of Every Pair is Greater or Equal to K",
     link: "htps:/www.geeksforgeeks.org/permute-two-arrays-sum-every-pair-greater-equal-k/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 60,
@@ -798,7 +798,7 @@ const AmanDsaQuestions = [
     problem:
       "Write a Function to get the Intersection Point of two Linked Lists",
     link: "htps:/www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 114,
@@ -989,7 +989,7 @@ const AmanDsaQuestions = [
     problem:
       "Stack permutations check if an array is stack permutation of other",
     link: "htps:/www.geeksforgeeks.org/stack-permutations-check-if-an-array-is-stack-permutation-of-other/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 141,
@@ -1011,7 +1011,7 @@ const AmanDsaQuestions = [
     problem:
       "Queue based approach for first non repeating character in a stream",
     link: "htps:/www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 144,
@@ -1082,7 +1082,7 @@ const AmanDsaQuestions = [
     problem:
       "Find the maximum of minimums for every window size in a given array",
     link: "htps:/www.geeksforgeeks.org/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 154,
@@ -1139,7 +1139,7 @@ const AmanDsaQuestions = [
     problem:
       "Minimum cost for acquiring all coins with k extra coins allowed with every coin",
     link: "htps:/www.geeksforgeeks.org/minimum-cost-for-acquiring-all-coins-with-k-extra-coins-allowed-with-every-coin/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 162,
@@ -1238,7 +1238,7 @@ const AmanDsaQuestions = [
     problem:
       "Minimum edges to reverse to make path from a source to a destination",
     link: "htps:/www.geeksforgeeks.org/minimum-edges-reverse-make-path-source-destination/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 176,
@@ -1246,7 +1246,7 @@ const AmanDsaQuestions = [
     problem:
       "Minimize Cash Flow among a given set of friends who have borrowed money from each other",
     link: "htps:/www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 177,
@@ -1415,7 +1415,7 @@ const AmanDsaQuestions = [
     problem:
       "Minimum swap required to convert binary tree to binary search tree",
     link: "htps:/www.geeksforgeeks.org/minimum-swap-required-convert-binary-tree-binary-search-tree/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 201,
@@ -1640,7 +1640,7 @@ const AmanDsaQuestions = [
     problem:
       "Choose k array elements such that difference of maximum and minimum is minimized",
     link: "htps:/www.geeksforgeeks.org/k-numbers-difference-maximum-minimum-k-number-minimized/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 233,
@@ -1683,7 +1683,7 @@ const AmanDsaQuestions = [
     problem:
       "Find the maximum repeating number in O(n) time and O(1) extra space",
     link: "htps:/www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 239,
@@ -1691,7 +1691,7 @@ const AmanDsaQuestions = [
     problem:
       "K-th smallest element after removing some integers from natural numbers",
     link: "htps:/www.geeksforgeeks.org/k-th-smallest-element-removing-integers-natural-numbers/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 240,
@@ -1930,7 +1930,7 @@ const AmanDsaQuestions = [
     problem:
       "Minimum time taken by each job to be completed given by a Directed Acyclic Graph",
     link: "htps:/www.geeksforgeeks.org/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 274,
@@ -1938,7 +1938,7 @@ const AmanDsaQuestions = [
     problem:
       "Find whether it is possible to finish all tasks or not from given dependencies",
     link: "htps:/www.geeksforgeeks.org/find-whether-it-is-possible-to-finish-all-tasks-or-not-from-given-dependencies/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 275,
@@ -2534,7 +2534,7 @@ const AmanDsaQuestions = [
     problem:
       "Largest area rectangular sub-matrix with equal number of 1’s and 0’s",
     link: "htps:/www.geeksforgeeks.org/largest-area-rectangular-sub-matrix-equal-number-1s-0s/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 360,
@@ -2549,7 +2549,7 @@ const AmanDsaQuestions = [
     problem:
       "Find the two non-repeating elements in an array of repeating elements",
     link: "htps:/practice.geeksforgeeks.org/problems/finding-the-numbers0215/1",
-    solved: "false",
+    solved: false,
   },
   {
     id: 362,
@@ -2599,7 +2599,7 @@ const AmanDsaQuestions = [
     problem:
       "Divide two integers without using multiplication, division and mod operator",
     link: "htps:/www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/",
-    solved: "false",
+    solved: false,
   },
   {
     id: 369,
