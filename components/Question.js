@@ -15,7 +15,7 @@ const Question = ({ name, link, qid, sheetId, solved, barHandle }) => {
           />
           <div className="name">{name}</div>
         </div>
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           <button type="submit">SOLVE</button>
         </a>
       </Container>

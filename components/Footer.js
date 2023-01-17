@@ -9,13 +9,17 @@ const Footer = () => {
         <div className="author a1">
           <span>Devendra Bedwal</span>
           <div className="row">
-            <a href="https://www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
               <GrLinkedin />
             </a>
-            <a href="https://www.instagram.com" target="_blank">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GrInstagram />
             </a>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               <GrGithub />
             </a>
           </div>
@@ -26,13 +30,22 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/ankur-yadav-aky/"
               target="_blank"
+              rel="noreferrer"
             >
               <GrLinkedin />
             </a>
-            <a href="https://www.instagram.com" target="_blank">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GrInstagram />
             </a>
-            <a href="https://github.com/Ankur-Ydv" target="_blank">
+            <a
+              href="https://github.com/Ankur-Ydv"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GrGithub />
             </a>
           </div>

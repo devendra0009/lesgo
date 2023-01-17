@@ -37,7 +37,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const sheet = ({ sheet, sheetId }) => {
+const Sheet = ({ sheet, sheetId }) => {
   const [search, setSearch] = useState("");
   const [topic, setTopic] = useState("");
   const [data, setData] = useState(false);
@@ -212,4 +212,4 @@ const Container = styled.div`
   }
 `;
 
-export default sheet;
+export default Sheet;
