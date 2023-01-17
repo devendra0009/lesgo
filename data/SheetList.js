@@ -1,8 +1,8 @@
-import Blind75Questions, { BlindTopics } from "./SheetsData/blind75";
-import FrazSheetQuestions, { FrazTopics } from "./SheetsData/frazSheet";
+import Blind75Questions, { BlindTopics } from "./SheetsData/Blind75";
+import FrazSheetQuestions, { FrazTopics } from "./SheetsData/FrazSheet";
 import Neetcode150Questions, {
   NeetcodeTopics,
-} from "./SheetsData/neetcode150questions";
+} from "./SheetsData/Neetcode150questions";
 import StriverSdeSheetQuestions, {
   SSSTopics,
 } from "./SheetsData/StriverSdeSheetQuestions";
