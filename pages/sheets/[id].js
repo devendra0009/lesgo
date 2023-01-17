@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import Question from "../../components/Question";
 import Sidebar from "../../components/Sidebar";
 import Bar from "../../components/Bar";
-import { TbLoader } from "react-icons/Tb";
+import { TbLoader } from "react-icons/tb";
 
 export async function getStaticPaths() {
   const response = await axios.get(`${process.env.BASE_URL}/api/sheetlist`);

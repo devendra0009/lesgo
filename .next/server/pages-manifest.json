@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/api/sheets/[id]": "pages/api/sheets/[id].js",
+  "/api/sheetlist": "pages/api/sheetlist.js",
+  "/sheets/[id]": "pages/sheets/[id].js"
 }
