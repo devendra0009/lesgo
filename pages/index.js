@@ -4,8 +4,22 @@ import Footer from "../components/Footer";
 import SheetBox from "../components/SheetBox";
 import ThemeToggler from "../components/ThemeToggler";
 import SheetList from "../data/SheetList";
+import axios from 'axios'
 
-const index = () => {
+export async function getStaticProps({ params }) {
+  const response = await axios.get(
+    `${process.env.BASE_URL}/api/sheetlist`
+  );
+  const sheets = response.data;
+
+  return {
+    props: {
+      sheets,
+    },
+  };
+}
+
+const index = ({sheets}) => {
   return (
     <>
       <Header>
@@ -13,7 +27,7 @@ const index = () => {
         <div><ThemeToggler/></div>
       </Header>
       <Container>
-        {SheetList.map((sheet) => {
+        {sheets.map((sheet) => {
           return <SheetBox sheet={sheet} key={sheet.id} />;
         })}
       </Container>
@@ -35,6 +49,7 @@ const Header = styled.div`
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   opacity: 0.8;
   .tri2do {
     font-family: "Bree Serif", sans-serif;

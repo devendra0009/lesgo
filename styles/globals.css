@@ -52,13 +52,13 @@ body {
 }
 
 .light-theme {
-  --bgcolor:  #dff1ff;
+  --bgcolor:   rgb(247 248 250/1);
   --primary: #1d5c96;
   --secondary: #7db0de;
   --third: #a94064;
   --fourth: #12395d;
   --scroller: #12395d;
-  --grey: #808080;
+  --grey: rgba(0,10,32,.05);
   --text: #000;
   --inputText: #000;
   --hover: #acbabf;

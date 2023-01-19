@@ -39,7 +39,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   background-image: url("https://mcdn.wallpapersafari.com/medium/68/82/PvDEwd.jpg");
-  color: var(--white);
+  color: white;
   .title > * {
     display: inline-block;
     font-size: 200px;

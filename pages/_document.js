@@ -11,7 +11,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="light-theme">
+      <body >
         <Main />
         <NextScript />
       </body>

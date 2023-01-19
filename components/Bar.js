@@ -45,11 +45,12 @@ const Container = styled.div`
   border-radius: 5px;
   .topic {
     padding: 0.5rem;
-    background: var(--lightBlue);
-    border-radius:12px;
-    font-weight:bold;
+    background: var(--grey);
+    border-radius:5px;
+    ${'' /* font-weight:bold; */}
     color: var(--text);
-    border: 2px solid var(--text);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    ${'' /* border: 2px solid var(--text); */}
     display: flex;
     justify-content: center;
     align-items: center;

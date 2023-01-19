@@ -3,14 +3,24 @@ import React, { useState, useEffect } from "react";
 import { BsToggleOn, BsToggleOff, BsSun, BsFillSunFill } from "react-icons/bs";
 
 const ThemeToggler = () => {
-  const [theme, setTheme] = useState("light-theme");
-
+  const [theme, setTheme] = useState('light-theme');
   const handleClick = () => {
-    theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
+    if(theme === "dark-theme"){
+      setTheme("light-theme");
+      window.localStorage.setItem('theme','light-theme');
+    }  
+    else{
+      setTheme("dark-theme");
+      window.localStorage.setItem('theme','dark-theme');
+    }
   };
-
   useEffect(() => {
-    document.body.className = theme;
+    setTheme(window.localStorage.getItem('theme'))
+  }, [])
+  
+  
+  useEffect(() => {
+    document.body.className = window.localStorage.getItem('theme');
   }, [theme]);
 
   return (
