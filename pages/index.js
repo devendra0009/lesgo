@@ -10,7 +10,7 @@ const index = () => {
     <>
       <Header>
         <div className="tri2do">TRI2DO</div>
-        <ThemeToggler />
+        <div><ThemeToggler/></div>
       </Header>
       <Container>
         {SheetList.map((sheet) => {
@@ -23,10 +23,12 @@ const index = () => {
 };
 
 const Header = styled.div`
-  background: var(--scroller);
-  width: 50%;
-  display: block;
-  position: fixed;
+  background: var(--box);
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  position: absolute;
   padding: 0.5rem 2rem;
   top: 2rem;
   z-index: 2;
@@ -38,7 +40,7 @@ const Header = styled.div`
     font-family: "Bree Serif", sans-serif;
     text-align: center;
     font-size: 36px;
-    color: #fff;
+    color: var(--blue);
   }
 `;
 

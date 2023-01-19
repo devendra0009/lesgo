@@ -6,6 +6,7 @@ import Sidebar from "../../components/Sidebar";
 import Bar from "../../components/Bar";
 import { TbLoader } from "react-icons/tb";
 import SheetList from "../../data/SheetList";
+import ThemeToggler from "../../components/ThemeToggler";
 
 export async function getStaticPaths() {
   // const response = await axios.get(`${process.env.BASE_URL}/api/sheetlist`);
@@ -53,7 +54,7 @@ const Sheet = ({ sheet, sheetId }) => {
       setSolvedNumber(items.length);
     }
   }, [topic]);
-
+  
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
@@ -65,7 +66,7 @@ const Sheet = ({ sheet, sheetId }) => {
   const removeTopic = () => {
     setTopic("");
   };
-
+  
   const barHandle = (data) => {
     if (data) {
       setSolvedNumber(solvedNumber - 1);
@@ -92,11 +93,25 @@ const Sheet = ({ sheet, sheetId }) => {
           </>
         ) : (
           <>
-            <Navbar>
+            {/* <Navbar>
               <div className="logo">
                 <Link href="/">
                   <span>TRI2DO</span>
                 </Link>
+              </div>
+              <input
+                type="text"
+                placeholder="Search Problem"
+                onChange={handleChange}
+              />
+            </Navbar> */}
+            <Navbar>
+              <div style={{display:"flex", marginTop:'10px'}}>
+                <Link href="/">
+                  <span >TRI2DO</span>
+                </Link>
+              <div style={{marginTop: "8px" ,marginLeft: '102px'}}> <ThemeToggler/> </div>
+              <div className="divider"></div>
               </div>
               <input
                 type="text"
@@ -110,7 +125,7 @@ const Sheet = ({ sheet, sheetId }) => {
                 name={sheet.name}
                 handleClick={handleClick}
               />
-              <Contain>
+              <div style={{width:"100%"}}>
                 <Bar
                   topic={topic}
                   totalQuestions={sheet.length}
@@ -118,6 +133,7 @@ const Sheet = ({ sheet, sheetId }) => {
                   sheetname={sheet.name}
                   removeTopic={removeTopic}
                 />
+              <Contain>
                 {filteredQuestions.map((item) => {
                   return (
                     <Question
@@ -131,7 +147,7 @@ const Sheet = ({ sheet, sheetId }) => {
                     />
                   );
                 })}
-              </Contain>
+              </Contain></div>
             </Content>
           </>
         )}
@@ -146,7 +162,7 @@ const Contain = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem 2rem;
+  ${'' /* padding: 1rem 2rem; */}
   overflow-y: scroll;
 `;
 
@@ -155,7 +171,7 @@ const Content = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: var(--grey);
+  ${'' /* background-color: var(--grey); */}
 `;
 
 const Navbar = styled.div`
@@ -165,22 +181,33 @@ const Navbar = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: var(--bgcolor);
-  color: var(--primary);
+  color: var(--blue);
+  ${'' /* background-color: var(--bgcolor);
+  color: var(--primary); */}
   span {
     font-size: 32px;
     font-family: "Bree Serif", sans-serif;
     &:hover {
-      color: var(--third);
+      ${'' /* color:  var(--midBlue); */}
     }
   }
+  .divider{
+    width: 30vh;
+    margin-top: 31px;
+    border-bottom: 2px solid var(--text);
+    position: relative;
+    left: -255px;
+    top: 8px;
+  }
+
   input {
     padding: 0.5rem;
     width: 30%;
-    background: transparent;
+    ${'' /* background: transparent; */}
     border: none;
-    border-bottom: 2px solid var(--fourth);
-    color: var(--text);
+    border-bottom: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+    color: var(--inputText);
     font-size: 16px;
     &:focus {
       outline: none;

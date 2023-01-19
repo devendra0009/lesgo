@@ -73,7 +73,7 @@ const Container = styled.div`
     gap: 1rem;
     span {
       font-size: 20px;
-      color: var(--third);
+      color: var(--primary);
     }
     .row {
       display: flex;

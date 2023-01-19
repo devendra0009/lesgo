@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React, { useState, useEffect } from "react";
-import { BsToggleOn, BsToggleOff } from "react-icons/bs";
+import { BsToggleOn, BsToggleOff, BsSun, BsFillSunFill } from "react-icons/bs";
 
 const ThemeToggler = () => {
   const [theme, setTheme] = useState("light-theme");
@@ -17,9 +17,9 @@ const ThemeToggler = () => {
     <>
       <Container onClick={handleClick}>
         {theme === "light-theme" ? (
-          <BsToggleOff className="toggle off" />
+          <BsSun color='var(--blue)' className="toggle off"/>
         ) : (
-          <BsToggleOn className="toggle on" />
+          <BsFillSunFill color='var(--blue)' className="toggle on"/>
         )}
       </Container>
     </>
@@ -27,13 +27,13 @@ const ThemeToggler = () => {
 };
 
 const Container = styled.div`
-  position: absolute;
+  ${'' /* position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 1rem; */}
   cursor: pointer;
   .toggle {
     font-size: 36px;
-    color: var(--bgcolor);
+    color: var(--text);
   }
 `;
 

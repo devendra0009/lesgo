@@ -29,7 +29,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--bgcolor);
+  ${'' /* background-color: var(--bgcolor); */}
   color: var(--text);
   border-radius: 5px;
   .left {
@@ -44,17 +44,21 @@ const Container = styled.div`
   button {
     padding: 1rem;
     width: 10rem;
-    background: transparent;
-    border: 2px solid var(--third);
+    ${'' /* background: transparent; */}
+    background-color:  var(--green);
+    ${'' /* border: 2px solid var(--text); */}
+    font-weight:bold;
+    border-radius: 8px ;
+    color: white;
     transition: 0.5s ease-in-out;
     &:hover {
-      background-color: var(--hover);
-      border: 2px solid var(--third);
+      ${'' /* background-color:  var(--green); */}
+      ${'' /* background-color: var(--hover); */}
+      ${'' /* border: 2px solid var(--third); */}
       cursor: pointer;
     }
   }
   &:hover {
-    color: var(--third);
   }
 `;
 

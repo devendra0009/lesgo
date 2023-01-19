@@ -34,7 +34,7 @@ const Sidebar = ({ topics, name, handleClick }) => {
 const Container = styled.div`
   width: 25rem;
   height: 100%;
-  background: var(--bgcolor);
+  ${'' /* background: var(--bgcolor); */}
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -47,11 +47,15 @@ const Container = styled.div`
     padding-bottom: 0.5rem;
     color: var(--white);
     border-bottom: 2px solid var(--fourth);
-    border-top: 2px solid var(--fourth);
+    ${'' /* border-top: 2px solid var(--fourth); */}
     .head {
-      padding: 1rem;
+      ${'' /* padding: 1rem;
       font-size: 20px;
-      color: var(--third);
+      color: var(--third); */}
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--text);
     }
     span {
       width: 100%;
@@ -61,7 +65,7 @@ const Container = styled.div`
       &:hover,
       &:focus {
         cursor: pointer;
-        background-color: var(--hover);
+        background-color: var(--lightBlue);
       }
     }
   }
